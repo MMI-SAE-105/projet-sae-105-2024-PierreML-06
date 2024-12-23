@@ -1,0 +1,6 @@
+.event__title {
+    width: 313px;
+    height: 116px;
+    flex-shrink: 0;
+    color: blue;
+}
