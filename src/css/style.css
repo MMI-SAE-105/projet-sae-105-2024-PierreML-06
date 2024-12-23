@@ -6,7 +6,8 @@
 @import "components/event.css";
 @import "components/intro.css";
 @import "components/footer.css";
-
+@import "components/menu_déroulant.css";
+@import "components/image_responsif.css";
 
 /* layout */
 @import "layout/header.css";
