@@ -15,29 +15,19 @@ if (toggle && nav) {
 }
 
 
-// menu déroulant --------------------------------------------------------
+// menu footer --------------------------------------------------------
 
 
-document.querySelectorAll('.menu__item--dropdown > a').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const dropdown = this.nextElementSibling;
 
-        // Ferme les autres menus ouverts
-        document.querySelectorAll('.dropdown').forEach(menu => {
-            if (menu !== dropdown) {
-                menu.style.visibility = 'hidden';
-                menu.style.opacity = '0';
-            }
-        });
+// Sélectionner le bouton du menu et le menu lui-même
+const menuButton = document.getElementById('menu-btn');
+const menu = document.getElementById('mainNav');
 
-        // Alterne l'affichage du menu courant
-        if (dropdown.style.visibility === 'visible') {
-            dropdown.style.visibility = 'hidden';
-            dropdown.style.opacity = '0';
-        } else {
-            dropdown.style.visibility = 'visible';
-            dropdown.style.opacity = '1';
-        }
-    });
+// Ajouter un événement au clic sur le bouton
+menuButton.addEventListener('click', function () {
+    // Vérifier si le menu est ouvert ou fermé
+    const isOpen = menu.getAttribute('aria-hidden') === 'false';
+
+    // Basculer l'attribut aria-hidden pour ouvrir/fermer le menu
+    menu.setAttribute('aria-hidden', isOpen ? 'true' : 'false');
 });
