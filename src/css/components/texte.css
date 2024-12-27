@@ -1,0 +1,19 @@
+.titre_blanc {
+color: white;
+background-color: black;
+padding-left: 20px;
+margin: 0px;
+}
+.texte_blanc {
+color: white;
+    background-color: black;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+.texte_noir {
+    color: black;
+    background-color: white;
+    padding-left: 20px;
+    margin: 0px;
+}

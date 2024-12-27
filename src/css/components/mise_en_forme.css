@@ -1,50 +1,43 @@
-/* Image de fond */
 .background-container {
     position: relative;
-    height: 100vh;
-    /* Prend toute la hauteur de la fenêtre */
 }
 
-.background-container .img {
+.background-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    /* Assure que l'image de fond soit derrière le contenu */
+    height: auto;
+    display: block;
 }
 
-/* Drapeau en haut à droite */
 .flag-link {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    text-align: center;
 }
 
 .flag-img {
-    width: 50px;
-    /* Ajuste la taille du drapeau */
+    width: 40px;
     height: auto;
     cursor: pointer;
 }
 
-/* Texte Préphonos aligné à gauche */
+.flag-text {
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+
 .text-container {
     position: absolute;
     top: 20%;
-    /* Position verticale du texte */
     left: 20px;
-    /* Décalage à gauche */
     z-index: 1;
-    /* S'assure que le texte soit visible par-dessus l'image */
 }
 
 .header__title {
     font-size: 3em;
-    /* Ajuste la taille du texte selon le design */
     color: white;
-    /* Change la couleur du texte si nécessaire */
     font-weight: bold;
 }

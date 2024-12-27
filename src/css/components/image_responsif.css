@@ -4,3 +4,11 @@
     height: auto;
     margin: 0;
 }
+
+.img-déco {
+    display: block;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        border-radius: 20px;
+}

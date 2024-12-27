@@ -9,6 +9,8 @@
 @import "components/menu_déroulant.css";
 @import "components/image_responsif.css";
 @import "components/mise_en_forme.css";
+@import "components/décoration.css";
+@import "components/texte.css";
 
 /* layout */
 @import "layout/header.css";
