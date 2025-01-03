@@ -11,6 +11,7 @@
 @import "components/mise_en_forme.css";
 @import "components/décoration.css";
 @import "components/texte.css";
+@import "components/call_to_action.css";
 
 /* layout */
 @import "layout/header.css";

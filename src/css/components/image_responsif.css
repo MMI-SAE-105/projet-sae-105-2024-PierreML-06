@@ -12,3 +12,21 @@
         margin: auto;
         border-radius: 20px;
 }
+
+
+.image-container {
+    background-color: black;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.img-déco-noir {
+    display: block;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
