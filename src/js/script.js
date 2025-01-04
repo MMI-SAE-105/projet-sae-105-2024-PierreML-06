@@ -31,3 +31,13 @@ menuButton.addEventListener('click', function () {
     // Basculer l'attribut aria-hidden pour ouvrir/fermer le menu
     menu.setAttribute('aria-hidden', isOpen ? 'true' : 'false');
 });
+
+
+
+// formulaire ------------------------------------------------------
+
+
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Empêche la soumission réelle du formulaire
+    alert("Votre message a été envoyé !");
+});

@@ -153,3 +153,78 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.vertical-line3 {
+    position: absolute;
+    background-color: black;
+    width: 25px;
+    height: 100%;
+    z-index: 1;
+}
+
+.frise-item3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0;
+    position: relative;
+    z-index: 2;
+
+}
+
+.frise-item3:nth-child(odd) img {
+    order: 1;
+}
+
+.frise-item3:nth-child(odd) p {
+    order: 2;
+}
+
+.frise-item3:nth-child(even) img {
+    order: 2;
+}
+
+.frise-item3:nth-child(even) p {
+    order: 1;
+}
+
+img.left3,
+img.right3 {
+    max-width: 45%;
+    height: auto;
+    object-fit: contain;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid black;
+    position: absolute;
+    bottom: -1650px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}

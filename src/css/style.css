@@ -13,6 +13,7 @@
 @import "components/texte.css";
 @import "components/call_to_action.css";
 @import "components/vidéo.css";
+@import "components/formulaire.css";
 
 /* layout */
 @import "layout/header.css";
