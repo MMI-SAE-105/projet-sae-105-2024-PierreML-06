@@ -12,6 +12,7 @@
 @import "components/décoration.css";
 @import "components/texte.css";
 @import "components/call_to_action.css";
+@import "components/vidéo.css";
 
 /* layout */
 @import "layout/header.css";
