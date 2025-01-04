@@ -23,3 +23,15 @@ color: white;
     padding-left: 20px;
     margin: 0px;
 }
+.titre_film_blanc{
+color: white;
+    background-color: black;
+    text-align: center;
+    margin: 0px;
+}
+.titre_film_noir{
+    color: black;
+        background-color: white;
+    text-align: center;
+        margin: 0px;
+}
