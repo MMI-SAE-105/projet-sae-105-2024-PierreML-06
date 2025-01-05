@@ -223,8 +223,46 @@ img.right3 {
     border-right: 50px solid transparent;
     border-top: 100px solid black;
     position: absolute;
-    bottom: -1650px;
+    bottom: -1680px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
+}
+
+
+
+
+
+
+
+.rectangles-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+
+.rectangle {
+    width: 100px;
+    height: 15px;
+    background-color: black;
+    border: 2px solid black;
+}
+
+
+
+
+.bande_blanche {
+height: 5vh;
+background-color: white;
+margin: 0px;
+}
+
+
+.bande_noir {
+height: 5vh;
+background-color: black;
+margin: 0px;
 }
