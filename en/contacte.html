@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte</title>
+
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script type="module" src="../src/js/script.js"></script>
+
+    <!-- menu -->
+    
+    <header class="header">
+        <div class="header__logo-container">
+            <img class="menu_logo" src="../assets/icons/logo_Prephonos.webp" alt="Logo Prephonos" />
+            <p class="header__title">Préphonos</p>
+        </div>
+        <button class="header__menu-btn menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar" aria-hidden="true"></span>
+        </button>
+    </header>
+    
+    
+    <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+        <div class="menu__header">
+            <img class="menu_logo_menu" src="../assets/icons/logo_Prephonos.webp" alt="Logo Prephonos" />
+            <h2 class="menu__title">Menu</h2>
+        </div>
+    
+        <ul class="menu__list list-unstyled">
+            <!-- Dropdown menu "Our articles" -->
+            <li class="menu__item">
+                <p class="menu__section-title">Our articles:</p>
+                <ul class="dropdown">
+                    <li><a class="menu__link" href="index.html">Home</a></li>
+                    <li><a class="menu__link" href="article_telephone.html">The evolution of telephones</a></li>
+                    <li><a class="menu__link" href="article_livre.html">5G for Dummies</a></li>
+                    <li><a class="menu__link" href="article_musique.html">Carmen by Stromae</a></li>
+                    <li><a class="menu__link" href="article_realisateur.html">Scott Derrickson</a></li>
+                    <li><a class="menu__link" href="article_film.html">Black Phone</a></li>
+                </ul>
+            </li>
+    
+            <!-- Dropdown menu "Other section" -->
+            <li class="menu__item">
+                <p class="menu__section-title">Other section:</p>
+                <ul class="dropdown">
+                    <li><a class="menu__link" href="frise.html">Timeline</a></li>
+                    <li><a class="menu__link" href="a_propos.html">About us</a></li>
+                    <li><a class="menu__link" href="contacte.html">Contact us</a></li>
+                    <li><a class="menu__link" href="section_glossaire.html">Glossary section</a></li>
+                    <li><a class="menu__link" href="autre_projet.html">Other project</a></li>
+                    <li><a class="menu__link" href="liste_film.html">Movie list</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    
+    
+    </head>
+    
+    <!-- fin menu -->
+
+<body>
+
+
+
+
+    <!-- Image de fond -->
+    <div class="background-container">
+        <img class="img background-img" src="../assets/img/contacter_nous_fond.webp" alt="" />
+    
+    
+<div class="text-container2">
+    <p class="header__title">contact us</p>
+</div>
+
+
+
+<!-- contact form -->
+<div class="fond_noir">
+    <div class="form-container">
+        <form id="contact-form">
+            <h2>Contact us</h2>
+            <div class="form-group">
+                <input type="text" id="nom" name="nom" placeholder=" " required>
+                <label for="nom">Last Name</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="prenom" name="prenom" placeholder=" " required>
+                <label for="prenom">First Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder=" " required>
+                <label for="email">Email Address</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder=" " required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+<!-- end of contact form -->
+
+
+<p class="bande_noir"> </p>
+
+
+
+<!--footer -->
+
+<footer class="footer">
+    <div class="footer-left">
+        <img class="footerlogo" src="../assets/icons/logo_Prephonos.webp" alt="Prephonos Logo">
+        <p class="footertxt">Prephonos</p>
+    </div>
+
+    <div class="footer-right">
+        <h3 class="footertxt2">Other content you might be interested in</h3>
+        <a href="#" class="footermenu" id="menu-btn">Menu</a>
+
+        <div class="footertxt3">
+            <p>Contact</p>
+            <p>01 98 22 11 55</p>
+            <p>Prephonos@gmail.com</p>
+        </div>
+
+        <div class="footertxt4">
+            <p>Project carried out in 2024 as part of an educational exercise at the MMI department of Montbéliard</p>
+            <p>https://blogdummi.fr/</p>
+        </div>
+
+        <p class="footernousuivre">Follow us:</p>
+
+        <div class="footerimg">
+            <img src="../assets/icons/logo_instagram_blanc.webp" alt="Instagram Logo">
+            <img src="../assets/icons/logo_facebook_blanc.webp" alt="Facebook Logo">
+            <img src="../assets/icons/logo_x_blanc.webp" alt="X Logo">
+        </div>
+    </div>
+</footer>
+
+<!-- The menu -->
+<nav class="header__menu menu" id="mainNav" aria-hidden="true">
+    <div class="menu__header">
+        <img class="menu_logo_menu" src="../assets/icons/logo_Prephonos.webp" alt="Prephonos Logo" />
+        <h2 class="menu__title">Menu</h2>
+    </div>
+    <ul class="menu__list list-unstyled">
+        <!-- Menu items here -->
+    </ul>
+</nav>
+
+<!-- End footer -->
+
+
+
+</body>
+
+</html>
