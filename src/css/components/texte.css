@@ -49,3 +49,7 @@ color: white;
     text-align: center;
         margin: 0px;
 }
+h1 {
+font-size: 40px;
+    font-weight: 400;
+}

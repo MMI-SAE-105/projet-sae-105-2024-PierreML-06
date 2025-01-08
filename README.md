@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : mouilleseaux lhuillier
+- PRÉNOM : Pierre
+- GROUPE : C1
+- URL du site : prephonos.mouilleseaux-lhuillier-pierre.fr
+- URL FIGMA : https://www.figma.com/design/J1JsOVZ6HxUDJRtiBKA32v/projet-pierre-Mouilleseaux-Lhuillier?node-id=8-63&t=uTx9HiCz78bgu8Mm-1
