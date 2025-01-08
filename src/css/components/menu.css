@@ -25,8 +25,11 @@
 /* Bouton du menu */
 .menu-btn {
     background-color: var(--blue);
+    /* Utilise la même couleur que le fond du menu */
     border: none;
+    /* Supprime les bordures si elles sont visibles */
     border-radius: 4px;
+    /* Optionnel : arrondi pour un style plus harmonieux */
     position: relative;
     width: 30px;
     height: 30px;
@@ -34,9 +37,8 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 20;
+    z-index: 100;
 }
-
 /* Barres du bouton du menu */
 .menu-btn__bar,
 .menu-btn__bar::before,
@@ -48,8 +50,8 @@
     position: absolute;
     border-radius: 2px;
     left: 0;
-    z-index: 10;
-    transition: all 0.4s ease-in-out;
+    transition: transform 0.3s ease;
+    /* Transition fluide pour la rotation */
 }
 
 /* Positionnement des barres du bouton */
@@ -62,15 +64,15 @@
 }
 
 /* Animation pour le bouton du menu en croix */
-.menu-btn[aria-expanded="true"] .menu-btn__bar,
-.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
-.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+.menu-btn[aria-expanded="true"] .menu-btn__bar {
     transform: rotate(135deg);
+    /* Barre principale en croix */
 }
 
 .menu-btn[aria-expanded="true"] .menu-btn__bar::before,
 .menu-btn[aria-expanded="true"] .menu-btn__bar::after {
     transform: rotate(90deg);
+    /* Barres secondaires alignées */
     top: 0;
 }
 
@@ -79,8 +81,9 @@
     color: var(--white);
     text-decoration: none;
     font-size: 1.1rem;
-    /* Valeur par défaut */
+    /* Taille du texte */
     padding: 0.75rem 1rem;
+    /* Espacement autour du texte */
     display: block;
     transition: background 0.3s ease;
 }
@@ -95,7 +98,7 @@
 .menu__title {
     text-align: center;
     font-size: 2.5rem;
-    /* Valeur par défaut */
+    /* Taille du titre */
     font-weight: bold;
     margin: 0;
     width: 100%;
@@ -110,7 +113,9 @@
 
 .menu__item {
     margin-bottom: 1.5rem;
+    /* Espacement entre les éléments */
     padding-bottom: 0.75rem;
+    /* Espacement sous chaque item */
 }
 
 /* Structure du logo et titre */
@@ -119,8 +124,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
+    /* Espacement autour du titre et du logo */
     border-bottom: 2px solid #ccc;
-    padding: 4px;
 }
 
 .menu_logo {
@@ -146,7 +151,7 @@
 /* Section de menu */
 .menu__section-title {
     font-size: 1.5rem;
-    /* Valeur par défaut */
+    /* Taille du texte des sections */
     font-weight: bold;
     margin: 0.75rem 0;
 }
@@ -154,81 +159,16 @@
 /* Réduire la taille du texte général du menu */
 .menu {
     font-size: 1.3rem;
-    /* Valeur par défaut */
+    /* Taille globale du texte du menu */
 }
 
 /* Ajuster la position des éléments de la liste sous le titre */
 .menu__item>.dropdown {
     margin-top: 0.75rem;
+    /* Espacement entre les sous-menus */
 }
 
 .menu__header {
     margin-bottom: 1.5rem;
-}
-
-/* Rendre la taille du texte responsive avec des media queries */
-@media (max-width: 1024px) {
-    .menu__link {
-        font-size: 1rem;
-        /* Taille réduite pour les tablettes */
-    }
-
-    .menu__title {
-        font-size: 2rem;
-        /* Taille réduite pour le titre */
-    }
-
-    .menu__section-title {
-        font-size: 1.3rem;
-        /* Taille réduite pour les titres de sections */
-    }
-
-    .menu {
-        font-size: 1.1rem;
-        /* Taille réduite pour le menu */
-    }
-}
-
-@media (max-width: 768px) {
-    .menu__link {
-        font-size: 0.9rem;
-        /* Taille encore réduite pour les petits écrans */
-    }
-
-    .menu__title {
-        font-size: 1.8rem;
-        /* Taille encore réduite pour le titre */
-    }
-
-    .menu__section-title {
-        font-size: 1.2rem;
-        /* Taille encore réduite pour les titres de sections */
-    }
-
-    .menu {
-        font-size: 1rem;
-        /* Taille réduite pour le menu */
-    }
-}
-
-@media (max-width: 480px) {
-    .menu__link {
-        font-size: 0.8rem;
-        /* Taille encore réduite pour les très petits écrans */
-    }
-
-    .menu__title {
-        font-size: 1.5rem;
-        /* Taille encore réduite pour le titre */
-    }
-
-    .menu__section-title {
-        font-size: 1.1rem;
-        /* Taille encore réduite pour les titres de sections */
-    }
-
-    .menu {
-        font-size: 0.9rem;
-        /* Taille réduite pour le menu */
-    }
+    /* Espacement sous le titre */
 }

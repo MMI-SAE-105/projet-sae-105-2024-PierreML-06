@@ -1,5 +1,6 @@
+/* Variables */
 :root {
-    /* Color styles */
+    /* Couleurs */
     --primary: #ffc85a;
     --black: black;
     --gray-800: #252525;
@@ -7,9 +8,9 @@
     --gray-400: #d4d4d4;
     --gray-200: #f7f7f7;
     --white: white;
-    --blue:#192652;
+    --blue: #192652;
 
-    /* Text-size styles */
+    /* Tailles des textes */
     --fs-xs: 0.75rem;
     --fs-s: 0.875rem;
     --fs-md: 1rem;
@@ -19,7 +20,7 @@
     --fs-3xl: 2.625rem;
     --fs-4xl: 3.125rem;
 
-    /* Font-family styles */
+    /* Fontes */
     --font-sans-serif: "Inter", sans-serif;
     --font-serif: "Playfair Display", serif;
 
