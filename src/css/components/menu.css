@@ -35,7 +35,6 @@
     align-items: center;
     cursor: pointer;
     z-index: 20;
-    /* Assure que le bouton reste visible au-dessus du menu */
 }
 
 /* Barres du bouton du menu */
@@ -80,9 +79,8 @@
     color: var(--white);
     text-decoration: none;
     font-size: 1.1rem;
-    /* Augmenté la taille du texte */
+    /* Valeur par défaut */
     padding: 0.75rem 1rem;
-    /* Augmenté l'espace autour du texte */
     display: block;
     transition: background 0.3s ease;
 }
@@ -97,7 +95,7 @@
 .menu__title {
     text-align: center;
     font-size: 2.5rem;
-    /* Augmenté la taille du titre */
+    /* Valeur par défaut */
     font-weight: bold;
     margin: 0;
     width: 100%;
@@ -112,9 +110,7 @@
 
 .menu__item {
     margin-bottom: 1.5rem;
-    /* Augmenté l'espace entre les éléments */
     padding-bottom: 0.75rem;
-    /* Augmenté l'espace en dessous de chaque item */
 }
 
 /* Structure du logo et titre */
@@ -123,7 +119,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
-    /* Augmenté l'espace autour du titre et du logo */
     border-bottom: 2px solid #ccc;
     padding: 4px;
 }
@@ -151,7 +146,7 @@
 /* Section de menu */
 .menu__section-title {
     font-size: 1.5rem;
-    /* Augmenté la taille du texte des sections */
+    /* Valeur par défaut */
     font-weight: bold;
     margin: 0.75rem 0;
 }
@@ -159,16 +154,81 @@
 /* Réduire la taille du texte général du menu */
 .menu {
     font-size: 1.3rem;
-    /* Augmenté la taille du texte du menu global */
+    /* Valeur par défaut */
 }
 
 /* Ajuster la position des éléments de la liste sous le titre */
 .menu__item>.dropdown {
     margin-top: 0.75rem;
-    /* Augmenté l'espace entre les sous-menus */
 }
 
 .menu__header {
     margin-bottom: 1.5rem;
-    /* Augmenté l'espace sous le titre */
+}
+
+/* Rendre la taille du texte responsive avec des media queries */
+@media (max-width: 1024px) {
+    .menu__link {
+        font-size: 1rem;
+        /* Taille réduite pour les tablettes */
+    }
+
+    .menu__title {
+        font-size: 2rem;
+        /* Taille réduite pour le titre */
+    }
+
+    .menu__section-title {
+        font-size: 1.3rem;
+        /* Taille réduite pour les titres de sections */
+    }
+
+    .menu {
+        font-size: 1.1rem;
+        /* Taille réduite pour le menu */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu__link {
+        font-size: 0.9rem;
+        /* Taille encore réduite pour les petits écrans */
+    }
+
+    .menu__title {
+        font-size: 1.8rem;
+        /* Taille encore réduite pour le titre */
+    }
+
+    .menu__section-title {
+        font-size: 1.2rem;
+        /* Taille encore réduite pour les titres de sections */
+    }
+
+    .menu {
+        font-size: 1rem;
+        /* Taille réduite pour le menu */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu__link {
+        font-size: 0.8rem;
+        /* Taille encore réduite pour les très petits écrans */
+    }
+
+    .menu__title {
+        font-size: 1.5rem;
+        /* Taille encore réduite pour le titre */
+    }
+
+    .menu__section-title {
+        font-size: 1.1rem;
+        /* Taille encore réduite pour les titres de sections */
+    }
+
+    .menu {
+        font-size: 0.9rem;
+        /* Taille réduite pour le menu */
+    }
 }
