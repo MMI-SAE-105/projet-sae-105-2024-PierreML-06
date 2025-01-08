@@ -4,88 +4,22 @@
     display: flex;
     position: fixed;
     inset: 0;
-    z-index: 9;
+    z-index: 10;
     background-color: var(--blue);
     color: var(--white);
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: var(--space5x) var(--space3x) var(--space3x);
     transform: translateX(100vw);
     transition: transform 0.3s ease-in-out, visibility 0.3s ease;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 /* Affichage du menu */
 .menu[aria-hidden="false"] {
     transform: translateX(0);
     visibility: visible;
-}
-
-/* Liens du menu */
-.menu__link {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 0.9rem;
-    /* Texte plus petit */
-    padding: 0.5rem 1rem;
-    display: block;
-    transition: background 0.3s ease;
-}
-
-/* Hover sur les liens */
-.menu__link:hover {
-    background: #f0f0f0;
-    color: #000;
-}
-
-/* Titre du menu */
-.menu__title {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-    width: 100%;
-    /* S'assure que le titre prend toute la largeur */
-    text-align: center;
-    /* Centre le texte */
-}
-
-/* Suppression des lignes de sous-menu */
-.menu__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu__item {
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    /* Pas de bordure pour supprimer la ligne */
-}
-
-/* Structure du logo et titre */
-.menu__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    border-bottom: 2px solid #ccc;
-    padding : 4px;
-}
-
-
-.menu_logo {
-    height: 50px;
-    width: auto;
-}
-
-.menu_logo_menu {
-    width: 50px;
-    height: auto;
-    position: absolute;
-    bottom: 20px;
-    /* Positionné en bas */
-    right: 20px;
-    /* Positionné à droite */
 }
 
 /* Bouton du menu */
@@ -100,8 +34,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 20;
+    /* Assure que le bouton reste visible au-dessus du menu */
 }
 
+/* Barres du bouton du menu */
 .menu-btn__bar,
 .menu-btn__bar::before,
 .menu-btn__bar::after {
@@ -116,6 +53,7 @@
     transition: all 0.4s ease-in-out;
 }
 
+/* Positionnement des barres du bouton */
 .menu-btn__bar::before {
     top: -10px;
 }
@@ -137,6 +75,72 @@
     top: 0;
 }
 
+/* Liens du menu */
+.menu__link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    /* Augmenté la taille du texte */
+    padding: 0.75rem 1rem;
+    /* Augmenté l'espace autour du texte */
+    display: block;
+    transition: background 0.3s ease;
+}
+
+/* Hover sur les liens */
+.menu__link:hover {
+    background: #f0f0f0;
+    color: #000;
+}
+
+/* Titre du menu */
+.menu__title {
+    text-align: center;
+    font-size: 2.5rem;
+    /* Augmenté la taille du titre */
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+}
+
+/* Suppression des lignes de sous-menu */
+.menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__item {
+    margin-bottom: 1.5rem;
+    /* Augmenté l'espace entre les éléments */
+    padding-bottom: 0.75rem;
+    /* Augmenté l'espace en dessous de chaque item */
+}
+
+/* Structure du logo et titre */
+.menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    /* Augmenté l'espace autour du titre et du logo */
+    border-bottom: 2px solid #ccc;
+    padding: 4px;
+}
+
+.menu_logo {
+    height: 50px;
+    width: auto;
+}
+
+.menu_logo_menu {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
 /* Sous-menus */
 .dropdown {
     list-style: none;
@@ -144,25 +148,27 @@
     padding: 0;
 }
 
-/* Rendre les liens du sous-menu moins visibles */
-.menu__link--silent {
-    color: var(--gray-600);
-    font-size: var(--fs-s);
-}
-
 /* Section de menu */
 .menu__section-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    /* Augmenté la taille du texte des sections */
     font-weight: bold;
-    margin: 1rem 0;
+    margin: 0.75rem 0;
 }
 
 /* Réduire la taille du texte général du menu */
 .menu {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    /* Augmenté la taille du texte du menu global */
 }
 
+/* Ajuster la position des éléments de la liste sous le titre */
+.menu__item>.dropdown {
+    margin-top: 0.75rem;
+    /* Augmenté l'espace entre les sous-menus */
+}
 
-
-
-
+.menu__header {
+    margin-bottom: 1.5rem;
+    /* Augmenté l'espace sous le titre */
+}
