@@ -24,7 +24,7 @@
 .menu__link {
     color: var(--white);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     /* Texte plus petit */
     padding: 0.5rem 1rem;
     display: block;
@@ -54,11 +54,10 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: block;
 }
 
 .menu__item {
-    margin-bottom: 50%;
+    margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     /* Pas de bordure pour supprimer la ligne */
 }
@@ -153,7 +152,7 @@
 
 /* Section de menu */
 .menu__section-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin: 1rem 0;
 }
