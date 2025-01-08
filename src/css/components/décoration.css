@@ -223,7 +223,7 @@ img.right3 {
     border-right: 50px solid transparent;
     border-top: 100px solid black;
     position: absolute;
-    bottom: -1680px;
+    bottom: -210%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
