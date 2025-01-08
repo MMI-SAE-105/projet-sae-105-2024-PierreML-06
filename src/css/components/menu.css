@@ -86,6 +86,9 @@
     /* Espacement autour du texte */
     display: block;
     transition: background 0.3s ease;
+    font-family: "Sarpanch", serif;
+        font-weight: 400;
+        font-style: normal;
 }
 
 /* Hover sur les liens */
@@ -102,6 +105,10 @@
     font-weight: bold;
     margin: 0;
     width: 100%;
+    font-family: "Literata", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
 }
 
 /* Suppression des lignes de sous-menu */

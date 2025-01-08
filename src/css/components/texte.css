@@ -3,12 +3,19 @@ color: white;
 background-color: black;
 padding-left: 20px;
 margin: 0px;
+font-family: "Krona One", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .texte_blanc {
 color: white;
     background-color: black;
     padding-left: 20px;
     margin: 0px;
+    font-family: "Outfit", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
 }
 
 .texte_noir {
@@ -16,12 +23,19 @@ color: white;
     background-color: white;
     padding-left: 20px;
     margin: 0px;
+    font-family: "Outfit", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
 }
 .titre_noir {
     color: black;
     background-color: white;
     padding-left: 20px;
     margin: 0px;
+    font-family: "Krona One", serif;
+        font-weight: 400;
+        font-style: normal;
 }
 .titre_film_blanc{
 color: white;
